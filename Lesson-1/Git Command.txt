@@ -1,0 +1,56 @@
+1)to check version :- git --version 
+
+2)configure github account information
+
+-git  -config user.name "Name"
+-git  -config user.email "email_@gmail.com"
+
+3)create a foldder:-
+    -git mkdir myproject // Create folder
+
+    cd myproject //change the directory
+
+4)intialize github
+    -git init
+
+5)to check status
+    -git status
+
+6) file add or staged
+    -git add [file.extension]
+
+7) mutiple flies add
+                    
+                    Shorter version
+-git add --all  ======================== git add -A
+
+
+8) Git log
+    -git log
+
+9)git help
+    -git command -help
+    -git help -all
+10)create branch
+    git branch "Branch name"
+
+11)change or update branch
+    git checkout "Branch name"
+
+12)list all branches
+    git branch
+
+13)show the status of branch
+    git status
+
+14)add all the files with all stag(add,modify,remove)
+    git add --all
+
+15)
+
+step for github
+1=create a files
+2=file is ready for staged before commit  ==  -git add [file.extension];
+3=Commit thw file === -git commit -m "This is my commit msg";
+
+
