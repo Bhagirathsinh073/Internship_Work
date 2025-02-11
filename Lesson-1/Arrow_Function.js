@@ -19,5 +19,12 @@ hello();
 function greet(name,message){
 console.log(`${message} and ${name}`);
 }
+const greeting = (fname  = "Guest") =>{
+    return `hello ${fname}!`;
+
+} 
 
 greet("-Bhagirathsinh","Good Morning first day of Internship");
+
+console.log(greeting());
+console.log(greeting("Bhagirathsinh"));
