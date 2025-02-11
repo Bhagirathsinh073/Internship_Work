@@ -7,6 +7,35 @@
 // function like arrow function ,let,const ,...(Spread oprator) etc are introduction on it
 
 // Three Type Variable Declaration 
+// let ,var , const 
+
+
+// 1)let:- 
+// The let keyword was introduced in ES6 (2015)
+// Variables declared with let have Block Scope
+// Variables declared with let must be Declared before use
+// Variables declared with let cannot be Redeclared in the same scope
+
+
+// 2)const
+// The const keyword was introduced in ES6 (2015)
+// Variables defined with const cannot be Redeclared
+// Variables defined with const cannot be Reassigned
+// Variables defined with const have Block Scope
+
+
+// When to Use var, let, or const?
+// 1. Always declare variables
+
+// 2. Always use const if the value should not be changed
+
+// 3. Always use const if the type should not be changed (Arrays and Objects)
+
+// 4. Only use let if you can't use const
+
+// 5. Only use var if you MUST support old browsers.
+
+
 let a = 10; 
 var b =  11;
 const Name= "Bhagirathsinh"; 
@@ -20,7 +49,7 @@ const Hello = (name) => {
   return console.log(`Hello, ${name}!`);
 }
 
-Hello("Parsh Texhnology");
+Hello("Parsh Technology");
 
 
 //Object Destructuring
