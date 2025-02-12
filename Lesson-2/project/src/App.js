@@ -8,11 +8,14 @@ import Layout from './Pages/Layout';
 import Blog from './Pages/Blog';
 import NavBar from './Componts/NavBar';
 import Nothing from './Pages/Nothing';
+import ClassComp from './Componts/ClassComp';
 function App() {
   return (
     <>
     <BrowserRouter>
-    <NavBar/>
+    
+    <NavBar/> {/*  Function Component */}
+    <ClassComp/> {/*  class Component */}
       <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/contact' element={<Contact/>}/>
