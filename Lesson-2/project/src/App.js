@@ -9,13 +9,15 @@ import Blog from './Pages/Blog';
 import NavBar from './Componts/NavBar';
 import Nothing from './Pages/Nothing';
 import ClassComp from './Componts/ClassComp';
+import LifeCycle from './Componts/LifeCycle';
 function App() {
   return (
     <>
     <BrowserRouter>
-    
+  
     <NavBar/> {/*  Function Component */}
     <ClassComp/> {/*  class Component */}
+    <LifeCycle/> '{/*  Life cycle of react */}
       <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/contact' element={<Contact/>}/>
