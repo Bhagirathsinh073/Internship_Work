@@ -14,8 +14,6 @@ const product = [
 
     const summary = `The most expensive product is ${
         product.reduce((max, product) => product.price > max.price ? product : max).name
-    }, priced at ${
-        product.reduce((max, product) => product.price > max.price ? product : max).price
-    }.`;
+    }, priced at ${product.reduce((max, product) => product.price > max.price ? product : max).price}.`;
 
     console.log(summary);
