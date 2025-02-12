@@ -1,31 +1,22 @@
 import './App.css';
 // import AxiosCoM from './Componts/AxiosCom';
 // import AxiosPost from './Componts/AxiosPost';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Home from './Pages/Home'
-import Contact from './Pages/Contact';
-import Layout from './Pages/Layout';
-import Blog from './Pages/Blog';
-import NavBar from './Componts/NavBar';
-import Nothing from './Pages/Nothing';
-import ClassComp from './Componts/ClassComp';
-import LifeCycle from './Componts/LifeCycle';
+import { BrowserRouter} from 'react-router-dom';
+// import ClassComp from './Componts/ClassComp';
+// import LifeCycle from './Componts/LifeCycle';
+import UseState from './Hooks/UseState';
+import Useeffect from './Hooks/Useeffect';
+import RouterB from './Componts/RouterB';
 function App() {
   return (
     <>
+    {/* <NavBar/>  Function Component */}
+    {/* <ClassComp/>  class Component */}
+    {/* <LifeCycle/> ' Life cycle of react */}
+    <UseState/> 
+    <Useeffect/>
     <BrowserRouter>
-  
-    <NavBar/> {/*  Function Component */}
-    <ClassComp/> {/*  class Component */}
-    <LifeCycle/> '{/*  Life cycle of react */}
-      <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/blog' element={<Blog/>}/>
-          <Route path='/layout' element={<Layout/>}/>
-          <Route path='*' element={<Nothing/>}/>
-      </Routes>
-    
+    <RouterB/> 
     </BrowserRouter>
     {/* <AxiosCoM/> */}
     {/* <AxiosPost/> */}
