@@ -33,7 +33,7 @@ const fetchData = new Promise((resolve,reject)=>{
         else{
             reject('Fetching failed');
         }
-    }, 2000);
+    }, 3000);
 });
 
 fetchData.then(()=>{
@@ -50,7 +50,7 @@ fetchData.then(()=>{
 function fetchDatas(){
     return new Promise((resolve,reject)=>{
         const Data1 = {name : 'Bhagirathsinh',age:23}
-        const success_ = true;
+        const success_ = false;
 
         setTimeout(()=>{
             
@@ -73,3 +73,5 @@ fetchDatas().then((Data1)=>{
 .catch((error)=>{
     console.error("Error fetching data"+error);
 })
+
+console.log(fetchData)
