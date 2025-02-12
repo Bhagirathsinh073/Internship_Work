@@ -1,0 +1,15 @@
+React life cycle 4 phase
+
+1)Initial 
+2)Mounting 
+#)Updating
+4)Unmounting
+
+1)Initial 
+-getDeaultProps()
+-getinitialprops()
+
+2)Mounting
+-ComponentwillMount();
+-ComponetdidMount();
+-ComponentunwillMount
