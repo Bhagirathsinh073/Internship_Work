@@ -51,6 +51,6 @@
 step for github
 1=create a files
 2=file is ready for staged before commit  ==  -git add [file.extension];
-3=Commit thw file === -git commit -m "This is my commit msg";
+3=Commit the file === -git commit -m "This is my commit msg";
 
 
