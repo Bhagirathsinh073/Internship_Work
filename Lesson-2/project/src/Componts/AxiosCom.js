@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios';
 
+//Get Request
 export default function AxiosCom() {
   const [data,SetData] = useState({});
   useEffect(()=>{
@@ -33,7 +34,7 @@ export default function AxiosCom() {
   data.length > 0 && data.map((user,index)=>{
     
     return (
-      <div key={index} style={{display:"flex",justifyContent:"space-around"}}>
+      <div key={index} style={{display:"flex",justifyContent:"space-around",alignItems:"center"}}>
         <h3>{user.name}</h3>
         <p>{user.email}</p>
         <p>{user.address.city}</p>
