@@ -6,7 +6,8 @@ export default function AxiosCom() {
   useEffect(()=>{
     const getPost = async ()=> {
       try {
-        const response =  await axios.get('https://jsonplaceholder.typicode.com/users');
+        // const response =  await axios.get('https://jsonplaceholder.typicode.com/users');
+        const response =  await axios.get('https://jsonplaceholder.typicode.com/posts');
         SetData(response.data);
         console.log(response.data);
       } catch (error) {
