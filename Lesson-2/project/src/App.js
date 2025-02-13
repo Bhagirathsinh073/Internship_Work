@@ -8,6 +8,7 @@ import { BrowserRouter} from 'react-router-dom';
 import UseState from './Hooks/UseState';
 import Useeffect from './Hooks/Useeffect';
 import UseContextMain from './Hooks/UseContext/Usecontext_Main';
+import UseRef from './Hooks/UseRef';
 // import RouterB from './Componts/RouterB';
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <UseState/> 
     <Useeffect/>
     <UseContextMain/>
+    <UseRef/>
     <BrowserRouter>
     {/* <RouterB/>  */}
     </BrowserRouter>
