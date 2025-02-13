@@ -7,7 +7,7 @@ import { BrowserRouter} from 'react-router-dom';
 // import LifeCycle from './Componts/LifeCycle';
 import UseState from './Hooks/UseState';
 import Useeffect from './Hooks/Useeffect';
-import UseContext_Main from './Hooks/UseContext/Usecontext_Main';
+import UseContextMain from './Hooks/UseContext/Usecontext_Main';
 // import RouterB from './Componts/RouterB';
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
     {/* <LifeCycle/> ' Life cycle of react */}
     <UseState/> 
     <Useeffect/>
-    <UseContext_Main/>
+    <UseContextMain/>
     <BrowserRouter>
     {/* <RouterB/>  */}
     </BrowserRouter>
