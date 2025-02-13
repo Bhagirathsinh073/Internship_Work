@@ -13,7 +13,7 @@ export default function ParentFile() {
   return (
     <div>
       <h1>Prop Driling</h1>
-      <h1>{text}</h1>
+      <h1>{text && "Parent "+ text}</h1>
     <MyContext.Provider value={{text,setText}}>
     <ChildAFile fulluserdata={fullname} fun={Gethello}/>
     </MyContext.Provider>
