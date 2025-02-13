@@ -9,14 +9,19 @@ export default function Useeffect() {
       setTimeout(() => {
         // setCount((count) => count + 1);
         setName("Bhagirathsinh");
-      }, 3000);
-    });
+        console.log("Name changed useEffect");
+      }, 1000);
+    },[name]);
+    const changeN = ()=>{
+      setName("John Doe");
+      console.log("Name changed With Button");
+    }
   return (
     <div>
       <h1>Useeffect</h1>
       <p>Hello, {name}!</p>
       {/* <h1>I've rendered {count} times!</h1>; */}
-      <button>Change Name</button>
+      <button onClick={changeN}>Change Name</button>
     </div>
   )
 }
