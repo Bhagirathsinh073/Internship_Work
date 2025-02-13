@@ -14,8 +14,9 @@ export default function UseRef() {
     const focusInput = () =>{
             inputElement.current.focus();
     }
-    const changehead = (e)=>{
+    const changehead = ()=>{
         heading.current.innerText= inputHeadValue;
+        heading.current.style.backgroundColor = "red";
     }
   return (
     <div>
