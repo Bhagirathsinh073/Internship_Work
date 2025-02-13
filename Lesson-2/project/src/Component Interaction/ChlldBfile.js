@@ -6,7 +6,8 @@ export default function ChildBFile(props) {
     <div>
       <h1>ChildBFile</h1>
       <p>{props.fulluserdataA}</p>
-      <ChildCFile fulluserdataB ={props.fulluserdataA} />
+      <button onClick={props.fun}>Click Me B</button>
+      <ChildCFile fulluserdataB ={props.fulluserdataA} fun={props.fun}/>
     </div>
   )
 }

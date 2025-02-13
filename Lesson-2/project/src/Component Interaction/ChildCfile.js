@@ -6,6 +6,7 @@ export default function ChildCFile(props) {
       <h1>ChildCFile</h1>
       <p>This is a ChildCFile component.</p>
         <p>{props.fulluserdataB}</p>
+        <button onClick={props.fun}>From C</button>
 
     </div>
   )
