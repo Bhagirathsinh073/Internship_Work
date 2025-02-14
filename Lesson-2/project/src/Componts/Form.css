@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@401&family=Outfit&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.main{
+    border: 2px solid black;
+    height:auto;
+    width: auto;
+    background-image: linear-gradient(to right bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+    /* background: linear-gradient( to top right,180deg,white,black); */
+}
+.mainbox{
+    margin: 10px  auto ;
+    width: 40%;
+    height: 100%;
+    /* padding: 30px 20px; */
+    background-color: white;
+    border-radius:10px ;
+}
+
+.formbox{
+    width: 100%;
+   border: 2px solid black;
+   border-radius:10px ;
+   height: 100%;
+}
+
+.head{
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: 20%;
+    border-radius:9px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 30px;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+.formbody{
+    background-color:#FFF;
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+.titleText{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ .formField input{
+    width: 95%;
+    height: 30px;
+    margin: 5px  10px;
+ }
+ .formField p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    
+ }
+ .formField textarea{
+    width: 95%;
+    height: 100px;
+    padding: 2px;
+    margin: 5px  10px;
+ }
+ .formField p i{
+      /* float: right; */
+    /* color: red; */
+    font-size: 20px;
+    text-align: end;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+ }
+ .formField  span{
+    font-size: small;
+    margin-left: 10px;
+    color: red;
+ }
+
+.btn{
+    margin: 12px;
+    background-color: darkblue;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 9px 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @media screen and (min-width: 375px) {
+    body {
+      /* background-color: lightgreen; */
+    }
+    .main{
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .mainbox{
+        margin-top: 0;
+        border-radius: 0;
+      width: 100%;
+      border: none;
+      height: 100%;
+    }
+    .head{
+        border-radius: 0;
+    }
+    
+    .formbox {
+        border-radius: 0;
+     height: 100%;
+    
+    }
+    .formField input{
+        /* width: 95%; */
+        height: 30px;
+        padding: 0px 0px 0px 5px;
+        margin: 15px  10px;
+     }
+     .btn {
+        margin-top: 5px;
+     }
+
+     .formField textarea{
+        /* width: 95%; */
+        /* height: 100px; */
+        padding: 5px;
+        /* margin: 5px  10px; */
+     }
+  }

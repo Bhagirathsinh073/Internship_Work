@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import './App.css';
-import ParentFile from './Component Interaction/ParentFile';
+import './Componts/Form.css';
+
+// import ParentFile from './Component Interaction/ParentFile';
 // import AxiosCoM from './Componts/AxiosCom';
 // import AxiosPost from './Componts/AxiosPost';
 // import { BrowserRouter} from 'react-router-dom';
@@ -11,6 +13,7 @@ import ParentFile from './Component Interaction/ParentFile';
 // import UseContextMain from './Hooks/UseContext/Usecontext_Main';
 // import UseRef from './Hooks/UseRef';
 // import RouterB from './Componts/RouterB';
+import Form from './Componts/Form';
 function App() {
   return (
     <>
@@ -26,7 +29,8 @@ function App() {
     {/* </BrowserRouter> Router */}
     {/* <AxiosCoM/> */}
     {/* <AxiosPost/> */}
-<ParentFile/>
+    {/* <ParentFile/> */}
+    <Form/>
     </>
   );
 }
