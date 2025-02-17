@@ -61,6 +61,7 @@
     width: 95%;
     height: 30px;
     margin: 5px  10px;
+    padding: 0px 5px 0px;
  }
  .formField p{
     font-size: 20px;
@@ -71,7 +72,7 @@
  .formField textarea{
     width: 95%;
     height: 100px;
-    padding: 2px;
+    padding: 2px 5px 2px;
     margin: 5px  10px;
  }
  .formField p i{
@@ -114,46 +115,67 @@
     font-style: normal;
   }
 
-  @media screen and (min-width: 375px) {
-    body {
-      /* background-color: lightgreen; */
-    }
-    .main{
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-    }
+  @media screen and (max-width: 395px)  {
+  
+   .main{
+    width: 100%;
+    height: 844px;
+   }
+   .mainbox{
+    width: 100%;
+    height: 843px;
+    margin: 0;
+    border-radius: 0px;
+   }
+   .formbox{
+    width: 100%;
+    height: 842px;
+    border-radius: 0px;
+    border: none;
+   }
+   .head{
+    height: 15%;
+    margin-bottom: 20px;
+    border-radius:0px ;
+   }
+   .formbody{
+    height: auto;
+   }
+   .formBodymain{
+    height: 80%;
+   }
+   .formField{
+    margin: 17px 7px;
+    padding: 5px;
+   }
+   .formbody .formBodymain .formField input{
+    padding: 5px;
+    margin: 14px 11px;
+   }
 
-    .mainbox{
-        margin-top: 0;
-        border-radius: 0;
-      width: 100%;
-      border: none;
-      height: 100%;
-    }
-    .head{
-        border-radius: 0;
-    }
-    
-    .formbox {
-        border-radius: 0;
-     height: 100%;
-    
-    }
-    .formField input{
-        /* width: 95%; */
-        height: 30px;
-        padding: 0px 0px 0px 5px;
-        margin: 15px  10px;
-     }
-     .btn {
-        margin-top: 5px;
-     }
+   .formField textarea{
+    margin: 2px 12px;
+    padding :3px 3px 0px 
+   }
 
-     .formField textarea{
-        /* width: 95%; */
-        /* height: 100px; */
-        padding: 5px;
-        /* margin: 5px  10px; */
-     }
+   .btn{
+    margin: 5px;
+   }
+   .btn .btn1{
+padding :9px 80px;
+   }
   }
+
+
+  @media screen and (max-width: 430px){
+    body{
+        background-color: aquamarine;
+    }
+    .mainbox{
+        width: 100%;
+        height: 891px;
+        margin: 0;
+        border-radius: 0px;
+    }
+   
+  } 

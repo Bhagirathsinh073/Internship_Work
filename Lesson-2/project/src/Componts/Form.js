@@ -112,7 +112,7 @@ export default function Form() {
           <p>Enter the details of incoming Clients</p>
       </div>
       <div className='formbody bebas-neue-regular'>
-        <form onSubmit={handleForm}>
+        <form onSubmit={handleForm} className='formBodymain'>
           <div className='formField'>
             <div className='titleText'>
           <p><i className="fa-solid fa-user"></i>FirstName </p><span ref={ferror}></span>
