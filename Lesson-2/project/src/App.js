@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import './App.css';
 import './Componts/Form.css';
+import Texttask from './Task-1/Text_task';
 
 // import ParentFile from './Component Interaction/ParentFile';
 // import AxiosCoM from './Componts/AxiosCom';
@@ -13,7 +14,7 @@ import './Componts/Form.css';
 // import UseContextMain from './Hooks/UseContext/Usecontext_Main';
 // import UseRef from './Hooks/UseRef';
 // import RouterB from './Componts/RouterB';
-import Form from './Componts/Form';
+// import Form from './Componts/Form';
 function App() {
   return (
     <>
@@ -30,7 +31,8 @@ function App() {
     {/* <AxiosCoM/> */}
     {/* <AxiosPost/> */}
     {/* <ParentFile/> */}
-    <Form/>
+    {/* <Form/> */}
+    <Texttask/>
     </>
   );
 }
