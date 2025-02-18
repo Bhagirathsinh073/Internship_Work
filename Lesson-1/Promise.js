@@ -122,20 +122,24 @@ setTimeout(()=>{
 //     }, 1000);
 // })
 
-// console.log(Promise.all([promises2,promises2_1, promises3,promises3_1 ,promises4,promise4_1]));  //Pending state of Promise.all
+// console.log(Promise.all([promises2, promises3,promises3_1 ,promises4]));  //Pending state of Promise.all
+// console.log(promise1)
+// console.log(promises3)
+// console.log(promises3_1)
+// console.log(promises4)
 
 //Pending state of Promise.all
 // console.log(Promise.all([promises2, promises3,promises3_1 ,promises4]));  
-Promise.all([promises2,promises3,promises4]).then((value)=>{
-    // console.log(value);
-    //[73, 10, "timeout"]
+// Promise.all([promises2,promises3,promises4]).then((value)=>{
+//     console.log(value);
+//     [73, 10, "timeout"]
     
-}).catch((error)=>{
-    console.error(error);
-    //Error
-})
+// }).catch((error)=>{
+//     console.error(error);
+//     //Error
+// })
 
-// console.log(Promise.all([promises2,promises2_1, promises3,promises3_1 ,promises4,promise4_1])); //fullfill state Promise.all()
+// console.log(Promise.all([promises2,promises2_1, promises3,promises3_1 ,promises4])); //fullfill state Promise.all()
 
 //fullfill state Promise.all()
 // console.log(Promise.all([promises2,promises3,promises3_1 ,promises4])); 
@@ -144,14 +148,19 @@ Promise.all([promises2,promises3,promises4]).then((value)=>{
 
 // The Promise.any() static method takes an iterable of promises as input and returns a single Promise. This returned promise fulfills when any of the input's promises fulfills, with this first fulfillment value. It rejects when all of the input's promises reject (including when an empty iterable is passed), with an AggregateError containing an array of rejection reasons.
 
-const promise5 = Promise.resolve(24);
+const promise5 = Promise.reject(24);
 const promise6 = Promise.reject("Promise6 -Any");
 const promise7 = new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("Timeout - Any");
-    },0);
+    },1000);
 })
-const promise8 =[promise5,promise6,promise7];
+const promise16 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("Timeout - Any 1000");
+    })
+},1000);
+const promise8 =[promise5,promise6,promise7,promise16];
 Promise.any(promise8).then((value)=>{
     // console.log(value);
 })
@@ -164,7 +173,7 @@ Promise.any(promise8).then((value)=>{
 // The Promise.race() static method takes an iterable of promises as input and returns a single Promise. This returned promise settles with the eventual state of the first promise that settles.
 
 const promise9 = new Promise((resolve,reject)=>{
-    setTimeout(resolve,500,"Speed 500-P1-Race");
+    setTimeout(resolve,5000,"Speed 500-P1-Race");
 });
 const promise10 = new Promise((resolve,reject)=>{
     setTimeout(resolve,1000,"Speed 1000-P2-Race");
@@ -173,6 +182,8 @@ const promise10 = new Promise((resolve,reject)=>{
 const promise11 = [promise9,promise10];
 Promise.race(promise11).then((race)=>{
     // console.log(race); //!important
+    // console.log(promise9)
+    // console.log(promise10)
     //Speed 500-P2-Race
     //Both get Full Fill But only print first promise faster than promises
 })
@@ -200,7 +211,7 @@ function unsucessful(){
 //reject with promise
 const promise12 = Promise.resolve("success");
 const promise13 = Promise.reject(promise12);
-//  console.log(promise13 === promise12);
+ console.log(promise13 === promise12);
  promise13.catch((v)=>{
     //  console.log(v === promise12); // success
  })
@@ -229,6 +240,6 @@ Promise.try(success);
 Promise.try(failure);
 Promise.try(unsucessful);
 Promise.try(tryPromise);
-console.log(Promise.try(success));
-console.log(Promise.try(failure));
-console.log(Promise.try(unsucessful));
+// console.log(Promise.try(success));
+// console.log(Promise.try(failure));
+// console.log(Promise.try(unsucessful));

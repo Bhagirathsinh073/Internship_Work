@@ -1,5 +1,5 @@
 import './App.css';
-import Life from './Componts/Life';
+// import Life from './Componts/Life';
 // import './Componts/Form.css';
 // import ClassComp from './Componts/ClassComp';
 // import LifeCycle from './Componts/LifeCycle';
@@ -23,8 +23,9 @@ import Life from './Componts/Life';
 // import Create from './CRUD/create';
 // import Read from './CRUD/read';
 // import Update from './CRUD/update';
-import RouterB from './Componts/RouterB';
+// import RouterB from './Componts/RouterB';
 import { BrowserRouter} from 'react-router-dom';
+import Promise from './Componts/Promise';
 // import {Link,Route,Routes} from 'react-router-dom';
 
 function App() {
@@ -49,7 +50,7 @@ function App() {
 
     {/* CRUD-AXIOS */}
     <BrowserRouter>
-    <RouterB/> 
+    {/* <RouterB/>  */}
      {/* <div className='main'>
       <h2 className='main-header'>React CRUD Operation:</h2>
       <button><Link to={'/create'}>Create Operation</Link></button>
@@ -62,7 +63,8 @@ function App() {
       </div>
     </div> */}
    </BrowserRouter> 
-   <Life/> 
+   {/* <Life/>  */}
+   <Promise/>
     
     </>
   );
