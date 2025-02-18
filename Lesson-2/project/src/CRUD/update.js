@@ -1,26 +1,28 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-
+import { useNavigate } from 'react-router-dom';
 export default function Update() {
 
     const [firstname, setFirstName] = useState('');
     const [lastname, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-
     const [id, setID] = useState(null);
+    const navigate = useNavigate();
 
 useEffect(() => {
         setID(localStorage.getItem('ID'))
-        setFirstName(localStorage.getItem('FirstName'));
-        setLastName(localStorage.getItem('LastName'));
+        setFirstName(localStorage.getItem('First Name'));
+        setLastName(localStorage.getItem('Last Name'));
         setEmail(localStorage.getItem('Email'));
         setPhone(localStorage.getItem('Phone'));
 }, []);
 
-
+const handleSubmit =(e)=>{
+  e.preventDefault();
+}
 const updateAPIData = () =>{
-    axios.put(`https://67b2ce60bc0165def8ce9ce8.mockapi.io/FakeData${id}`,{
+    axios.put(`https://67b2ce60bc0165def8ce9ce8.mockapi.io/FakeData/${id}`,{
          id,
          firstname,
          lastname,
@@ -28,10 +30,16 @@ const updateAPIData = () =>{
          phone,
  
     });
-
+    localStorage.setItem('First Name', " ");
+    localStorage.setItem('Last Name', " ");
+    localStorage.setItem('Email', " ");
+    localStorage.setItem('Phone', " ");
+    localStorage.setItem('ID', " ");
+    console.log("Data Update");
+    navigate("/read");
 }
   return (
-    <form className="create-form">
+    <form className="create-form" onSubmit={handleSubmit}>
     <label>
       First Name:
       <input type="text"  placeholder='First Name' value={firstname} onChange={(e) => setFirstName(e.target.value)}/>

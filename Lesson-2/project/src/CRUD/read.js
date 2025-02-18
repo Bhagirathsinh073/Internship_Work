@@ -8,7 +8,7 @@ function Read() {
       const res =  axios.get('https://67b2ce60bc0165def8ce9ce8.mockapi.io/FakeData')
       res.then((res)=>{
           setApiData(res.data);
-          console.log(res.data);
+        //   console.log(res.data);
     })
     res.catch((error)=>{
         console.log(error);
@@ -16,15 +16,15 @@ function Read() {
         
     },[]);
 
-    function setData(data){
-        console.log(data);
+    const setData =(data) =>{
+        // console.log(data);
         let {id,firstname,lastname,email,phone} = data;
         localStorage.setItem("ID",id);
-        localStorage.setItem("FirstName",firstname);
-        localStorage.setItem("LastName",lastname);
+        localStorage.setItem("First Name",firstname);
+        localStorage.setItem("Last Name",lastname);
         localStorage.setItem("Email",email);
         localStorage.setItem("Phone",phone);
-        console.log("Data Store in Local Storage");
+        // console.log("Data Store in Local Storage");
     }
   return (
     <div>
@@ -53,7 +53,7 @@ function Read() {
 
                             <td>
                                 <Link to='/update'>
-                                <button onClick={setData}>Update</button>         
+                                <button onClick={setData(data)}>Update</button>         
                             </Link>
                                 </td>
                         </tr>
