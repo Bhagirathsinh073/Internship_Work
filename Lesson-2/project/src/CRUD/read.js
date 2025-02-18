@@ -26,7 +26,20 @@ function Read() {
         localStorage.setItem("Phone",phone);
         // console.log("Data Store in Local Storage");
     }
-  return (
+    const getData = () => {
+        axios.get(`https://67b2ce60bc0165def8ce9ce8.mockapi.io/FakeData`)
+            .then((getData) => {
+                 setApiData(getData.data);
+             })
+    }
+
+    const onDelete = (id) =>{
+        axios.delete(`https://67b2ce60bc0165def8ce9ce8.mockapi.io/FakeData/${id}`)
+        .then(() => {
+            getData();
+        })
+    }
+   return (
     <div>
       
         <table border={1} >
@@ -54,6 +67,11 @@ function Read() {
                             <td>
                                 <Link to='/update'>
                                 <button onClick={setData(data)}>Update</button>         
+                            </Link>
+                                </td>
+                            <td>
+                                <Link to='/read'>
+                                <button onClick={()=>{onDelete(data.id)}}>Delete</button>         
                             </Link>
                                 </td>
                         </tr>
