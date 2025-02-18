@@ -13,7 +13,7 @@
   align-items: center;
   height: 100vh;
   background-color: #212121;
-  color: whitesmoke;
+  /* color: whitesmoke; */
   flex-direction: column;
 }
 
@@ -28,6 +28,7 @@
 }
 
 .create-form label{
+  /* color: whitesmoke !important; */
   color: whitesmoke !important;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px !important;

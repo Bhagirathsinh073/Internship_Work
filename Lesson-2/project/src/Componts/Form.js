@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, {  useRef, useState } from 'react'
 
 import './Form.css';
+import axios from 'axios';
 
 export default function Form() {
   const [FirstName,setFirstName] = useState("");
@@ -36,7 +37,8 @@ export default function Form() {
       ferror.current.textContent = "*First Name less then 15 characters*"
       console.log("*First Name less than 15 characters*")
     }else {
-      ferror.current.style.display = "none"
+      ferror.current.style.display = "none";
+      ferror.current.textContent = "";
       console.log(FirstName)
     }
     
@@ -51,11 +53,12 @@ export default function Form() {
       console.log("last name less than 20 characters")
     }else{
       console.log(lastName)
+      lerror.current.textContent = ""
     }
     
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const pattern = /^\d{10}$/;
-
+    
     if(mail === ""){
       console.log("Email is Empty")
       merror.current.textContent = "Email is required";
@@ -64,6 +67,7 @@ export default function Form() {
       console.log("not properly formatted")
     }
     else{
+      merror.current.textContent = ""
       console.log(mail)
     } 
     
@@ -72,9 +76,10 @@ export default function Form() {
       console.log("Phone Number is Empty")
     }else if(!pattern.test(phone)){
       perror.current.textContent = "Number is not properly";
-          console.log("not properly formatted")
+      console.log("not properly formatted")
     }
     else{
+      perror.current.textContent = ""
       console.log(phone)
     }
     
@@ -89,8 +94,26 @@ export default function Form() {
   //Console the data
   const sendData = () =>{   
     validate();
+    if(!FirstName || !lastName || !mail || !phone || !address){
+      console.log("Please fill all fields");
+      return;
+    }else{
+      axios.post("https://67b2ce60bc0165def8ce9ce8.mockapi.io/Form_Data",{
+        FirstName,
+        lastName,
+        mail,
+        phone,
+        address
+      }).then((res)=>{
+        console.log({res});
+      }).catch((err)=>{
+        console.log(err);
+      })
+    }
+    
   }
 
+ 
   //useRef to target the element to show or hide
   // const togg =() =>{
   //   if(show === true){

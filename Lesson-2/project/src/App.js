@@ -2,7 +2,8 @@ import './App.css';
 // import './Componts/Form.css';
 // import ClassComp from './Componts/ClassComp';
 // import LifeCycle from './Componts/LifeCycle';
-// import Form from './Componts/Form';
+import Form from './Componts/Form';
+import FormData from './Componts/Form_Data';
 
 //Hooks
 // import ParentFile from './Component Interaction/ParentFile';
@@ -18,10 +19,10 @@ import './App.css';
 // import Test from './axios/Test';
 // import AxiosCoM from './Componts/AxiosCom';
 // import AxiosPost from './Componts/AxiosPost';
-import Create from './CRUD/create';
-import Read from './CRUD/read';
-import Update from './CRUD/update';
-// import RouterB from './Componts/RouterB';
+// import Create from './CRUD/create';
+// import Read from './CRUD/read';
+// import Update from './CRUD/update';
+import RouterB from './Componts/RouterB';
 import { BrowserRouter,Link,Route,Routes} from 'react-router-dom';
 
 function App() {
@@ -40,13 +41,14 @@ function App() {
     {/* <AxiosPost/> */}
     {/* <ParentFile/> */}
     {/* <Form/> */}
+    {/* <FormData/> */}
     {/* <Test/> */}
       {/* <Texttask/> */}
 
     {/* CRUD-AXIOS */}
-     <BrowserRouter>
-    {/* <RouterB/>  */}
-     <div className='main'>
+    <BrowserRouter>
+    <RouterB/> 
+     {/* <div className='main'>
       <h2 className='main-header'>React CRUD Operation:</h2>
       <button><Link to={'/create'}>Create Operation</Link></button>
       <div>
@@ -56,8 +58,8 @@ function App() {
       <Route exact path='/update' element={<Update/>} />
       </Routes>
       </div>
-    </div>
-     </BrowserRouter>  
+    </div> */}
+   </BrowserRouter>  
     
     </>
   );
