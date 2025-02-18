@@ -1,9 +1,10 @@
 import './App.css';
+import Life from './Componts/Life';
 // import './Componts/Form.css';
 // import ClassComp from './Componts/ClassComp';
 // import LifeCycle from './Componts/LifeCycle';
-import Form from './Componts/Form';
-import FormData from './Componts/Form_Data';
+// import Form from './Componts/Form';
+// import FormData from './Componts/Form_Data';
 
 //Hooks
 // import ParentFile from './Component Interaction/ParentFile';
@@ -23,7 +24,8 @@ import FormData from './Componts/Form_Data';
 // import Read from './CRUD/read';
 // import Update from './CRUD/update';
 import RouterB from './Componts/RouterB';
-import { BrowserRouter,Link,Route,Routes} from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
+// import {Link,Route,Routes} from 'react-router-dom';
 
 function App() {
   return (
@@ -59,7 +61,8 @@ function App() {
       </Routes>
       </div>
     </div> */}
-   </BrowserRouter>  
+   </BrowserRouter> 
+   <Life/> 
     
     </>
   );

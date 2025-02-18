@@ -8,7 +8,7 @@ import { Routes, Route } from'react-router-dom';
 
 import Nothing from '../Pages/Nothing';
 import Form from './Form';
-import Form_Data from './Form_Data';
+import FormData from './Form_Data';
 
 export default function RouterB() {
   return (
@@ -20,7 +20,7 @@ export default function RouterB() {
           <Route path='/layout' element={<Layout/>}/>
           <Route path='*' element={<Nothing/>}/>
           <Route path='/form' element={<Form/>}/>
-          <Route path='/formdata' element={<Form_Data/>}/>
+          <Route path='/formdata' element={<FormData/>}/>
       </Routes>
     </div>
   )

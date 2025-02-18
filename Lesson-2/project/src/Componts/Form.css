@@ -169,7 +169,7 @@ padding :9px 80px;
 
   @media screen and (max-width: 430px){
     body{
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
     }
     .mainbox{
         width: 100%;
@@ -177,5 +177,15 @@ padding :9px 80px;
         margin: 0;
         border-radius: 0px;
     }
-   
+   /* .formbox{
+    background-image: linear-gradient(to right bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+
+   }
+   .head{
+    background-color: transparent;
+    color: #000000;
+   }
+   .formbody{
+    background-color: transparent;
+   } */
   } 
