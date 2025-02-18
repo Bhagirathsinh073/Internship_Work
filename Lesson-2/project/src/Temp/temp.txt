@@ -13,3 +13,5 @@ React life cycle 4 phase
 -ComponentwillMount();
 -ComponetdidMount();
 -ComponentunwillMount
+
+after Stashing this file
