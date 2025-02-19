@@ -20,3 +20,7 @@ continue from B-1
 function hello () {
     console.log("Hello");
 }
+
+function Hello2 (){
+    console.log("Welcome");
+}
