@@ -23,3 +23,8 @@ function HelloBrother2(){
 function HelloBrother(){
     <h1>Hello From BhagirathSinh</h1>
 }
+
+//day5 
+function Day5(){
+    <h1>Hello From day5</h1>
+}
