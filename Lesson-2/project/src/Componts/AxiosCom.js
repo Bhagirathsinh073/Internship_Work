@@ -7,7 +7,7 @@ export default function AxiosCom() {
   useEffect(()=>{
     const getPost = async ()=> {
       try {
-        const response =  await axios.get('https://jsonplaceholder.typicode.com/users');
+        const response =  await axios.get('https://jsonplaceholder.typicode.com/users/');
         // const response =  await axios.get('https://jsonplaceholder.typicode.com/posts');
         SetData(response.data);
         console.log(response.data);
@@ -31,7 +31,7 @@ export default function AxiosCom() {
     ))
   } */}
  {
-  data.length > 0 && data.map((user,index)=>{
+  data.length > 1 && data.map((user,index)=>{
     
     return (
       <div key={index} style={{display:"flex",justifyContent:"space-around",alignItems:"center"}}>
