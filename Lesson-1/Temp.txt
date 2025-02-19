@@ -24,3 +24,6 @@ function hello () {
 function Hello2 (){
     console.log("Welcome");
 }
+function Hello3 (){
+    console.log("Today Work");
+}
