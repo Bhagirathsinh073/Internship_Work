@@ -32,3 +32,11 @@ function Day5(){
 function Day6(){
     <h1>Hello From day6</h1>
 }
+//day7 
+function Day6(){
+    <h1>Hello From day6</h1>
+}
+//Day8
+fucntion day8(){
+    <h1>Hello From day8</h1>
+}
