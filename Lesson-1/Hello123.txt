@@ -18,3 +18,8 @@ function HelloBrother2(){
     <h1>Hello From BhagirathSinh2</h1>
 }
 
+
+//day 4
+function HelloBrother(){
+    <h1>Hello From BhagirathSinh</h1>
+}
