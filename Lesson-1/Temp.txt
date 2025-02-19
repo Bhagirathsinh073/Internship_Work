@@ -27,4 +27,9 @@ function Hello2 (){
  function Hello3(){
     console.log("Welcome to the world B-1");
 
- }
+ }function Hello3 (){
+    console.log("Today Work");
+}
+function Hello4 (){
+    console.log("Today Work : done! wednesday");
+}
