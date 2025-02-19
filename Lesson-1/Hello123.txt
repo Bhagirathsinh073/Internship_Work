@@ -46,6 +46,7 @@ function Day6(){
     <h1>Hello From day6</h1>
 }
 
+
 function Day8(){
     hello day 8
 }
