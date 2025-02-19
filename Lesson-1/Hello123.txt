@@ -46,3 +46,6 @@ function Day6(){
     <h1>Hello From day6</h1>
 }
 
+function day 8(){
+    BhagirathSinh; //
+}
