@@ -186,13 +186,13 @@ Promise.race(promise11).then((race)=>{
 
 
 function success(){
-    console.log("Success");
+    console.log("Success Done");
 }
 function failure(){
-    console.log("Failure");
+    console.log("Failure Done");
 }
 function unsucessful(){
-    console.error("Unsucessful");
+    console.error("Unsucessful Done");
 }
 // Promise.reject(new Error("Unsucessful - RejectError")).then(success, unsucessful);
 //it will retun only reject state if there is unsucessful is in reject state so it will return error 
@@ -200,9 +200,9 @@ function unsucessful(){
 //reject with promise
 const promise12 = Promise.resolve("success");
 const promise13 = Promise.reject(promise12);
-//  console.log(promise13 === promise12);
+//  console.log(promise13 === promise12);   
  promise13.catch((v)=>{
-    //  console.log(v === promise12); // success
+     console.log(v === promise12); // success
  })
 
 
@@ -225,10 +225,11 @@ promise14.then((value)=>{
 // The Promise.try() static method takes a callback of any kind (returns or throws, synchronously or asynchronously) and wraps its result in a Promise.
 
 const tryPromise = [success,unsucessful,failure];
-Promise.try(success);
-Promise.try(failure);
-Promise.try(unsucessful);
-Promise.try(tryPromise);
-console.log(Promise.try(success));
-console.log(Promise.try(failure));
-console.log(Promise.try(unsucessful));
+// Promise.try(success);
+// Promise.try(failure);
+// Promise.try(unsucessful);
+// Promise.try(promise6);  //true
+// Promise.try(tryPromise);
+// console.log(Promise.try(success));
+// console.log(Promise.try(failure));
+// console.log(Promise.try(unsucessful));
