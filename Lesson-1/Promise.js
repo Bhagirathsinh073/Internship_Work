@@ -197,13 +197,13 @@ Promise.race(promise11).then((race)=>{
 
 
 function success(){
-    console.log("Success Done");
+    console.log("Success");
 }
 function failure(){
-    console.log("Failure Done");
+    console.log("Failure");
 }
 function unsucessful(){
-    console.error("Unsucessful Done");
+    console.error("Unsucessful");
 }
 // Promise.reject(new Error("Unsucessful - RejectError")).then(success, unsucessful);
 //it will retun only reject state if there is unsucessful is in reject state so it will return error 
@@ -213,7 +213,7 @@ const promise12 = Promise.resolve("success");
 const promise13 = Promise.reject(promise12);
  console.log(promise13 === promise12);
  promise13.catch((v)=>{
-     console.log(v === promise12); // success
+    //  console.log(v === promise12); // success
  })
 
 
@@ -240,6 +240,6 @@ Promise.try(success);
 Promise.try(failure);
 Promise.try(unsucessful);
 Promise.try(tryPromise);
-console.log(Promise.try(success));
-console.log(Promise.try(failure));
-console.log(Promise.try(unsucessful));
+// console.log(Promise.try(success));
+// console.log(Promise.try(failure));
+// console.log(Promise.try(unsucessful));
