@@ -5,3 +5,12 @@ function Hello(){
 function HelloBhagirath(){
     <h1>Hello From BhagirathSinh</h1>
 }
+//Day2
+function Hello2(){
+    <h1>Hello From Main</h1>
+}
+
+function HelloBrother(){
+    <h1>Hello From BhagirathSinh</h1>
+}
+
