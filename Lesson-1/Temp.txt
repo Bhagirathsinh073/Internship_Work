@@ -24,3 +24,7 @@ function hello () {
 function Hello2 (){
     console.log("Welcome");
 }
+ function Hello3(){
+    console.log("Welcome to the world B-1");
+
+ }
