@@ -1,3 +1,7 @@
 function Hello(){
     <h1>Hello From Main</h1>
 }
+
+function HelloBhagirath(){
+    <h1>Hello From BhagirathSinh</h1>
+}
