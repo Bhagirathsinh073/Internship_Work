@@ -14,8 +14,8 @@ function HelloBrother(){
     <h1>Hello From BhagirathSinh</h1>
 }
 //day 3
-function HelloBrother2(){
-    <h1>Hello From BhagirathSinh2</h1>
+function Day3(){
+    <h1>Hello From Day3</h1>
 }
 
 
@@ -27,4 +27,8 @@ function HelloBrother(){
 //day5 
 function Day5(){
     <h1>Hello From day5</h1>
+}
+//day6 
+function Day6(){
+    <h1>Hello From day6</h1>
 }
