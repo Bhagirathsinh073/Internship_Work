@@ -29,23 +29,6 @@ export default function Final() {
     // console.log(fruits);
 
 
-    //conditinal render
-    const [isShow,setIsShow] = useState(false);
-
-    const ShowDiv = () =>{
-        return(
-            <>
-            <h1>Show Componet</h1>
-            </>
-        )
-    }
-    const HideDiv = () =>{
-        return(
-            <>
-            <h1>Hide Componet</h1>
-            </>
-        )
-    }
 
     // <button onClick={()=>{setIsShow(!isShow)}}>Click to Show/Hide</button>
     // {
@@ -55,7 +38,7 @@ export default function Final() {
     const [task,setTask] = useState(["Apple","Google"]);
     const regex = /\s{2,}/;
     // const regex = /^[a-zA-Z0-9 ]+$/; // Allows only letters, numbers, and spaces
-    const words = input.trim().split(" ");
+    // const words = input.trim().split(" ");
     const btnStyle = {
         backgroundColor: "#dc3545",
         border: "none",
@@ -134,3 +117,22 @@ const deleteTask =(index)=>{
         </>
   )
 }
+
+
+    //conditinal render
+    // const [isShow,setIsShow] = useState(false);
+
+    // const ShowDiv = () =>{
+    //     return(
+    //         <>
+    //         <h1>Show Componet</h1>
+    //         </>
+    //     )
+    // }
+    // const HideDiv = () =>{
+    //     return(
+    //         <>
+    //         <h1>Hide Componet</h1>
+    //         </>
+    //     )
+    // }
