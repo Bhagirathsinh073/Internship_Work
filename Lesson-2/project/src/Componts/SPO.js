@@ -10,10 +10,12 @@ export default function SPO() {
         name: 'John Doe',
         contact: '1234567890'
     }
+
   return (
     <div>
       <h1>Parent</h1>
       <SPOC {...user}  {...data}/>
+      <button onClick={() => setData({...data, fullName: 'Jane Doe', phone: '9999999999' })}>Change Data</button>
     </div>
   )
 }
