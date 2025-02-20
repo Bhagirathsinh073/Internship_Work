@@ -8,6 +8,10 @@ export default function UseMemo() {
     console.log("Calculating square...");
     return number * number;
   }, [number]);
+const numCount = useMemo(()=>{
+    console.log("Calculating count...");
+    return count * 2;
+  },[count]);
 
   return (
     <div>
@@ -16,6 +20,7 @@ export default function UseMemo() {
       <button onClick={() => setNumber(number + 1)}>Increase Number</button>
       
       <h3>Other Count: {count}</h3>
+      <h3>Current Count: {numCount}</h3>
       <button onClick={() => setCount(count + 1)}>Increase Count</button>
     </div>
   );
