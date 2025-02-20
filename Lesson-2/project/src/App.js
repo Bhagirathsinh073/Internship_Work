@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 // import Life from './Componts/Life';
 // import './Componts/Form.css';
@@ -23,11 +24,11 @@ import './App.css';
 // import Create from './CRUD/create';
 // import Read from './CRUD/read';
 // import Update from './CRUD/update';
-// import RouterB from './Componts/RouterB';
+import RouterB from './Componts/RouterB';
 import { BrowserRouter} from 'react-router-dom';
 // import SPO from './Componts/SPO';
 // import UseReducer from './Hooks/UseReducer';
-import UseMemo from './Hooks/UseMemo';
+// import UseMemo from './Hooks/UseMemo';
 // import Final from './Final';
 // import {Link,Route,Routes} from 'react-router-dom';
 
@@ -53,7 +54,9 @@ function App() {
 
     {/* CRUD-AXIOS */}
     <BrowserRouter>
-    {/* <RouterB/>  */}
+    <RouterB/> 
+
+    {/* //Cred opration  */}
      {/* <div className='main'>
       <h2 className='main-header'>React CRUD Operation:</h2>
       <button><Link to={'/create'}>Create Operation</Link></button>
@@ -66,11 +69,13 @@ function App() {
       </div>
     </div> */}
    </BrowserRouter> 
+
+
    {/* <Life/>  */}
     {/* <Final/> */}
     {/* <SPO/> */}
     {/* <UseReducer/> */}
-    <UseMemo/>
+    {/* <UseMemo/> */}
     </>
   );
 }
