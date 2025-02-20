@@ -46,10 +46,23 @@ function Day6(){
     <h1>Hello From day6</h1>
 }
 
-
+//day8
 function Day8(){
     hello day 8
 }
 function Day8_1(){
     hello day 8
 }
+
+//Day9
+function Day9(){
+    <h1>Hello From day9</h1>
+}
+
+if(
+    input.length === 0 ||  //empty input - enter task
+    input.length <= 5 ||    //input length  min 5
+    input.length >= 20 || //input length  max 20
+    input.startsWith(" ") //word stat is empty
+    
+)
