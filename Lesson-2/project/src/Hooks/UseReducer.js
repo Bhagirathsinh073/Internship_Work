@@ -22,7 +22,7 @@ const reducer = (state,action) =>{
         case "Complete":
             return state.map((todo)=>{
                 if(todo.id === action.id){
-                    return {...todo, complete:!todo.complete,title:todo.title = "Node JS", description :todo.description = "Done with NodeJS"}
+                    return {...todo, complete:!todo.complete,title:todo.title = "Node JS", description :todo.description = "Done with"}
                 }else{
                     return todo
                 }
