@@ -25,7 +25,7 @@ import './App.css';
 // import Update from './CRUD/update';
 // import RouterB from './Componts/RouterB';
 import { BrowserRouter} from 'react-router-dom';
-import SPO from './Componts/SPO';
+// import SPO from './Componts/SPO';
 import UseReducer from './Hooks/UseReducer';
 // import Final from './Final';
 // import {Link,Route,Routes} from 'react-router-dom';
@@ -67,8 +67,8 @@ function App() {
    </BrowserRouter> 
    {/* <Life/>  */}
     {/* <Final/> */}
-    <SPO/>
-    {/* <UseReducer/> */}
+    {/* <SPO/> */}
+    <UseReducer/>
     </>
   );
 }
