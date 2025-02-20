@@ -16,8 +16,10 @@ const intialTodo = [
 ];
 
 const reducer = (state,action) =>{
-    console.log(action)
-    console.log(state)
+    // console.log(action)
+    // console.log(state)
+    console.log(action.payload)
+    console.log(action.nakum)
     switch (action.type) {
         case "Complete":
             return state.map((todo)=>{
@@ -38,7 +40,7 @@ export default function UseReducer() {
     const  [todos,dispatch] = useReducer(reducer,intialTodo);
 
     const handleComplete = (todo) => {
-        dispatch({type:"Complete", id:todo.id})
+        dispatch({type:"Complete", id:todo.id,payload : "complete B",nakum : {...intialTodo}});
     }
   return (
     <div>
