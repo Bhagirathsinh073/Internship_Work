@@ -9,6 +9,7 @@ import { Routes, Route } from'react-router-dom';
 import Nothing from '../Pages/Nothing';
 import Form from './Form';
 import FormData from './Form_Data';
+import Product from '../Product/Product';
 
 
 //Lazy loading
@@ -29,6 +30,7 @@ export default function RouterB() {
           <Route path='/layout' element={<Layout/>}/>
           <Route path='*' element={<Nothing/>}/>
           <Route path='/form' element={<Form/>}/>
+          <Route path='/product' element={<Product/>}/>
           <Route path='/formdata' element={<FormData/>}/>
       </Routes>
       </Suspense>

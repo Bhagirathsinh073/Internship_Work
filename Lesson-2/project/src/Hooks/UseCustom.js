@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react"
 
 const useCustom = (url) =>{
-    const [data,setData] = useState(null);
-    const [loading,setLoading] = useState(true);
+    const [data,setData] = useState([]);
+    const [loading,setLoading] = useState(false);
 
 
     useEffect(()=>{
