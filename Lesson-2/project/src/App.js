@@ -31,6 +31,7 @@ import { BrowserRouter} from 'react-router-dom';
 // import UseMemo from './Hooks/UseMemo';
 // import Final from './Final';
 // import {Link,Route,Routes} from 'react-router-dom';
+// import ExpenseMain from "./Expense/ExpenseMain";
 
 function App() {
   return (
@@ -39,10 +40,15 @@ function App() {
     {/* <NavBar/>  Function Component */}
     {/* <ClassComp/>  class Component */}
     {/* <LifeCycle/> ' Life cycle of react */}
+    {/* <Life/>  */}
+
+
     {/* <UseState/>  */}
     {/* <Useeffect/> */}
     {/* <UseContextMain/> */}
     {/* <UseRef/> */}
+    {/* <UseReducer/> */}
+    {/* <UseMemo/> */}
    
     {/* <AxiosCoM/> */}
     {/* <AxiosPost/> */}
@@ -71,11 +77,9 @@ function App() {
    </BrowserRouter> 
 
 
-   {/* <Life/>  */}
     {/* <Final/> */}
     {/* <SPO/> */}
-    {/* <UseReducer/> */}
-    {/* <UseMemo/> */}
+ {/* <ExpenseMain/> */}
     </>
   );
 }

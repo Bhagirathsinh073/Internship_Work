@@ -36,12 +36,3 @@ export default function Product_item({data}) {
 }
 
 
-{/* <div>
-<div className="card">
-<img src={image} alt="Denim Jeans" style={{width:"100%"}}/>
-<h1>Tailored Jeans</h1>
-<p className="price">$19.99</p>
-<p>Some text about Product....</p>
-<p><button>Add to Cart</button></p>
-</div>
-</div> */}

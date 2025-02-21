@@ -10,6 +10,7 @@ import Nothing from '../Pages/Nothing';
 import Form from './Form';
 import FormData from './Form_Data';
 import Product from '../Product/Product';
+import PassMain from '../Password_Validator/PassMain';
 
 
 //Lazy loading
@@ -32,6 +33,7 @@ export default function RouterB() {
           <Route path='/form' element={<Form/>}/>
           <Route path='/product' element={<Product/>}/>
           <Route path='/formdata' element={<FormData/>}/>
+          <Route path='/pass' element={<PassMain/>}/>
       </Routes>
       </Suspense>
     </div>
