@@ -13,6 +13,7 @@ import Product from '../Product/Product';
 import PassMain from '../Password_Validator/PassMain';
 import ExpenseMain from '../Expense/ExpenseMain';
 import Challange from '../Challange/Challange';
+import BillMain from '../Bill/BillMain';
 
 
 //Lazy loading
@@ -38,6 +39,7 @@ export default function RouterB() {
           <Route path='/pass' element={<PassMain/>}/>
           <Route path='/exp' element={<ExpenseMain/>}/>
           <Route path='/chal' element={<Challange/>}/>
+          <Route path='/bill' element={<BillMain/>}/>
       </Routes>
       </Suspense>
     </div>
