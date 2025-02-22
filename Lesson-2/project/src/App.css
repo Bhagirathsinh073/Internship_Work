@@ -33,3 +33,13 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 12px !important;
 }
+
+
+.light{
+  background-color: white;
+  color: black;
+}
+.dark{
+  background-color: black;
+  color: white;
+}
