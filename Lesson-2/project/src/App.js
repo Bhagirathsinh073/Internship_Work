@@ -24,8 +24,9 @@ import './App.css';
 // import Create from './CRUD/create';
 // import Read from './CRUD/read';
 // import Update from './CRUD/update';
-import RouterB from './Componts/RouterB';
+// import RouterB from './Componts/RouterB';
 import { BrowserRouter} from 'react-router-dom';
+import RouterA from "./Componts/RouterA";
 // import SPO from './Componts/SPO';
 // import UseReducer from './Hooks/UseReducer';
 // import UseMemo from './Hooks/UseMemo';
@@ -60,7 +61,8 @@ function App() {
 
     {/* CRUD-AXIOS */}
     <BrowserRouter>
-    <RouterB/> 
+    {/* <RouterB/>  */}
+    <RouterA/>
 
     {/* //Cred opration  */}
      {/* <div className='main'>
@@ -74,6 +76,7 @@ function App() {
       </Routes>
       </div>
     </div> */}
+
    </BrowserRouter> 
 
 
