@@ -2,8 +2,8 @@ import React from 'react'
 import { useParams,useNavigate } from 'react-router-dom'
 
 export default function Profile() {
-    const {username,last} = useParams();
-    // const {} = useParams();
+    const {username} = useParams();
+    const {last} = useParams();
     const navigate = useNavigate();
   return (
     <div>
