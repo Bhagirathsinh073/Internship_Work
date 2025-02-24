@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+// import UseCounterMain from "./Hooks/UseCounterMain";
 // import Life from './Componts/Life';
 // import './Componts/Form.css';
 // import ClassComp from './Componts/ClassComp';
@@ -25,8 +26,9 @@ import './App.css';
 // import Read from './CRUD/read';
 // import Update from './CRUD/update';
 import RouterB from './Componts/RouterB';
+// import RouterA from './Componts/RouterA';
 // import { BrowserRouter} from 'react-router-dom';
-import Main from "./MultiStage_form/Main";
+// import Main from "./MultiStage_form/Main";
 // import RouterA from "./Componts/RouterA";
 // import SPO from './Componts/SPO';
 // import UseReducer from './Hooks/UseReducer';
@@ -92,9 +94,11 @@ function App() {
  {/* <ExpenseMain/> */}
 {/* =======Project======== */}
 
-      <Main/>
+      {/* <Main/> */}
       {/* <ParentForm/> */}
+    {/* <UseCounterMain/> */}
     </>
+
 
   );
 }
