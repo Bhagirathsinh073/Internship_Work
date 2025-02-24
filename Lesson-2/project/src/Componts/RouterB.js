@@ -6,7 +6,7 @@ import Blog from '../Pages/Blog';
 
 import { Routes, Route } from'react-router-dom';
 
-import Nothing from '../Pages/Nothing';
+// import Nothing from '../Pages/Nothing';
 import Form from './Form';
 import FormData from './Form_Data';
 import Product from '../Product/Product';
@@ -16,8 +16,9 @@ import Challange from '../Challange/Challange';
 import BillMain from '../Bill/BillMain';
 
 
+
 //Lazy loading
-const Home = lazy(() => import("../Pages/Home"));
+// const Home = lazy(() => import("../Pages/Home"));
 const Layout = lazy(() => import("../Pages/Layout"));
 const Contact = lazy(() => import("../Pages/Contact"));
 
@@ -28,11 +29,11 @@ export default function RouterB() {
           <Suspense fallback={<h2>Loading Page...</h2>}>
         
       <Routes>
-          <Route path='/' element={<Home/>}/>
+          {/* <Route path='/' element={<Home/>}/> */}
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/blog' element={<Blog/>}/>
           <Route path='/layout' element={<Layout/>}/>
-          <Route path='*' element={<Nothing/>}/>
+          {/* <Route path='*' element={<Nothing/>}/> */}
           <Route path='/form' element={<Form/>}/>
           <Route path='/product' element={<Product/>}/>
           <Route path='/formdata' element={<FormData/>}/>
@@ -40,8 +41,13 @@ export default function RouterB() {
           <Route path='/exp' element={<ExpenseMain/>}/>
           <Route path='/chal' element={<Challange/>}/>
           <Route path='/bill' element={<BillMain/>}/>
+
+          
+          {/* check  */}
+          {/* <Route path='/' element={<FirstStage/>}/> */}
       </Routes>
       </Suspense>
+      
     </div>
   )
 }

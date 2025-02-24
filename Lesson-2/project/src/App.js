@@ -25,7 +25,9 @@ import './App.css';
 // import Read from './CRUD/read';
 // import Update from './CRUD/update';
 // import RouterB from './Componts/RouterB';
-import { BrowserRouter} from 'react-router-dom';
+import ParentForm from "./Main_Form/ParentForm";
+// import { BrowserRouter} from 'react-router-dom';
+import Main from "./MultiStage_form/Main";
 // import RouterA from "./Componts/RouterA";
 // import SPO from './Componts/SPO';
 // import UseReducer from './Hooks/UseReducer';
@@ -43,6 +45,7 @@ function App() {
     {/* <LifeCycle/> ' Life cycle of react */}
     {/* <Life/>  */}
 
+{/* ========HOOKS============ */}
 
     {/* <UseState/>  */}
     {/* <Useeffect/> */}
@@ -51,18 +54,25 @@ function App() {
     {/* <UseReducer/> */}
     {/* <UseMemo/> */}
    
+{/* ========HOOKS============ */}
+
+{/* ==============AXIOS=============== */}
+    
     {/* <AxiosCoM/> */}
     {/* <AxiosPost/> */}
     {/* <ParentFile/> */}
     {/* <Form/> */}
     {/* <FormData/> */}
     {/* <Test/> */}
-      {/* <Texttask/> */}
-
+    {/* <Texttask/> */}
     {/* CRUD-AXIOS */}
-    <BrowserRouter>
-    {/* <RouterB/>  */}
+
+{/* ==============AXIOS=============== */}
+
+
+    {/* remove this if not work ROUTE-A */}
     {/* <RouterA/> */}
+    {/* <RouterB/>  */}
 
     {/* //Cred opration  */}
      {/* <div className='main'>
@@ -75,15 +85,18 @@ function App() {
       <Route exact path='/update' element={<Update/>} />
       </Routes>
       </div>
-    </div> */}
-
-   </BrowserRouter> 
-
-
+      </div> */}
+  
+{/* =======Project======== */}
     {/* <Final/> */}
     {/* <SPO/> */}
  {/* <ExpenseMain/> */}
+{/* =======Project======== */}
+
+      <Main/>
+      {/* <ParentForm/> */}
     </>
+
   );
 }
 
