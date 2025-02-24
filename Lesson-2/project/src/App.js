@@ -24,8 +24,7 @@ import './App.css';
 // import Create from './CRUD/create';
 // import Read from './CRUD/read';
 // import Update from './CRUD/update';
-// import RouterB from './Componts/RouterB';
-import ParentForm from "./Main_Form/ParentForm";
+import RouterB from './Componts/RouterB';
 // import { BrowserRouter} from 'react-router-dom';
 import Main from "./MultiStage_form/Main";
 // import RouterA from "./Componts/RouterA";
@@ -72,7 +71,7 @@ function App() {
 
     {/* remove this if not work ROUTE-A */}
     {/* <RouterA/> */}
-    {/* <RouterB/>  */}
+    <RouterB/> 
 
     {/* //Cred opration  */}
      {/* <div className='main'>
