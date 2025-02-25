@@ -11,7 +11,7 @@ function ErrorHandling() {
     useEffect(()=>{
         const fetchData = async() =>{
             try {
-                let responce = await axios.get("https://jsonplaceholder.typicode.com/todos");
+                let responce = await axios.get("https://jsonplaceholder.typicode.com/todoss");
                 setData(responce.data);
             } catch (error) {
                 console.log(error);
@@ -29,7 +29,17 @@ function ErrorHandling() {
     }
 
     if (error) {
-        return <div>Error: {error.message}</div>;
+        return <div>
+            Error: {error.message}<br/>
+            Name: {error.name}
+            <br/>
+            Code: {error.code}
+            <br/>
+        status:{error.status}
+            <br/>
+        Config:{error.config.method}
+            {/* Stack: {error.stack} */}
+            </div>;
     }
 
     if (!data) {
