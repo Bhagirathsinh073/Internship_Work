@@ -5,6 +5,7 @@ import './App.css';
 // import Test1 from './Task/Test1';
 // import Button from './Button/Button'
 // import Text from './Text/Text';
+import Main from './Form/Main';
 
 function App() {
   // const [toggle, setToggle] = useState(false);
@@ -15,7 +16,7 @@ function App() {
      
     {/* <Text toggle={toggle} displayTxt="Hello World" /> */}
     {/* <Button setToggle={setToggle} btnTxt="Toggle Text" /> */}
-
+<Main/>
       </>
   );
 }
