@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Desktop-First Approach</title>
+    <style>
+        /* Default styles for desktops */
+        body {
+            font-size: 20px;
+            background-color: #d0d0d0;
+        }
+
+        /* Styles for tablets (screen width below 1024px) */
+        @media (max-width: 1024px) {
+            body {
+                font-size: 18px;
+                background-color: #e0e0e0;
+            }
+        }
+
+        /* Styles for mobile devices (screen width below 768px) */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                background-color: #f0f0f0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Resize the browser
+        window to see the changes
+        in font size and background
+        color based on the device's width.</p>
+</body>
+
+</html>
+
+
+
+<!-- /* Default styles for desktops */
+body {
+  font-size: 20px;
+}
+/* Styles for tablets (screen width below 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+/* Styles for mobile devices (screen width below 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+} -->
