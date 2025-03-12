@@ -1,5 +1,7 @@
 const express = require('express');
-const { register, login, data } = require('../Controller/Hash/Hash_controller');
+const { register, login, data, page } = require('../Controller/Hash/Hash_controller');
+
+//middleware
 const {  verifyToken } = require('../middleware/verifyToken');
 const { authRole } = require('../middleware/authRole');
 
@@ -14,5 +16,5 @@ router.get('/protected',verifyToken,authRole(['admin']),(req,res)=>{
         user: req.user
     });
 })
-
+router.get('/users',page)
 module.exports = router

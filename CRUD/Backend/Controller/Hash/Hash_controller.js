@@ -1,5 +1,6 @@
 const UserHash = require('../../models/Hash/userSchema');
 const bcrypt = require('bcryptjs');
+const { request } = require('express');
 const jwt = require('jsonwebtoken');
 
 //===User registration Logic===//
@@ -96,4 +97,40 @@ const data = async (req,res)=>{
 }
 //=== Get all Users Data===//
 
-module.exports ={register,login,data}
+
+
+
+
+
+
+//=== Get pagination Users Data===//
+const page = async(req,res) =>{
+    const{page=1,limit=5,search} = req.query;
+console.log("page start")
+    //create variable for query parameters
+    const query = search ? {name: new RegExp(search,"i")}  : {}
+   console.log(query);
+    console.log(page);
+    console.log(limit); //      
+    try {
+        const users = await UserHash.find(query)
+        .skip((Number(page) - 1) * Number(limit))    //1-1*5 = 0 then 2-1*5=5 , then 3-1*5=10
+        .limit(Number(limit * 1))
+
+        const total = await UserHash.countDocuments(query)
+        res.json({
+            users,
+            total,
+            page: Number(page),
+            pages: Math.ceil(total / limit),
+          });
+
+    } catch (error) {
+        res.status(500).json({message: "Server error"});
+    }
+
+}
+//=== Get pagination Users Data===//
+
+
+module.exports ={register,login,data,page}

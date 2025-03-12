@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 //error middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    res.status(500).send("Something went wrong! ---- index.js line");
+    res.status(500).send("Something went wrong! ---- index.js line global middleware error");
   });
 
 //custom middleware - own middleware use
